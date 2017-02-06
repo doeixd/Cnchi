@@ -31,9 +31,9 @@
 
 # Enabled desktops
 
-DESKTOPS = ["base", "cinnamon", "gnome", "kde", "mate", "openbox", "xfce"]
+DESKTOPS = ["base", "cinnamon", "enlightenment", "gnome", "kde", "mate", "openbox", "xfce"]
 
-DESKTOPS_DEV = DESKTOPS + ["enlightenment", "lxqt"]
+DESKTOPS_DEV = DESKTOPS + ["lxqt", "deepin"]
 
 DESKTOP_ICONS_PATH = "/usr/share/cnchi/data/icons"
 
@@ -56,15 +56,16 @@ NAMES = {
     'enlightenment': "Enlightenment",
     'kde': "KDE",
     'lxqt': "LXQt",
-    'mate': "MATE"
+    'mate': "MATE",
+    'deepin':"deepin"
 }
 
 LIBS = {
     'gtk': ["cinnamon", "enlightenment", "gnome", "mate", "openbox", "xfce"],
-    'qt': ["kde", "lxqt"]
+    'qt': ["kde", "lxqt", "deepin"]
 }
 
-ALL_FEATURES = ["aur", "bluetooth", "cups", "firefox", "firewall", "flash",
+ALL_FEATURES = ["aur", "bluetooth", "cups", "chromium", "firefox", "firewall", "flash",
                 "fonts", "games", "graphic_drivers", "lamp", "lts", "office",
                 "visual", "smb"]
 
@@ -72,10 +73,11 @@ ALL_FEATURES = ["aur", "bluetooth", "cups", "firefox", "firewall", "flash",
 EXCLUDED_FEATURES = {
     'cinnamon': ["lamp", "visual"],
     'gnome': ["lamp", "visual"],
+    'deepin': ["lamp", "visual"],
     'kde': ["lamp", "visual"],
     'mate': ["lamp", "visual"],
     'enlightenment': ["lamp", "visual"],
-    'base': ["bluetooth", "firefox", "firewall", "flash", "games",
+    'base': ["bluetooth", "chromium", "firefox", "firewall", "flash", "games",
              "graphic_drivers", "office", "smb", "visual"],
     'openbox': ["lamp"],
     'lxqt': ["lamp", "visual"],
@@ -91,7 +93,8 @@ SESSIONS = {
     'enlightenment': 'enlightenment',
     'openbox': 'openbox',
     'lxqt': 'lx-session',
-    'xfce': 'xfce'
+    'xfce': 'xfce',
+    'deepin':'deepin'
 }
 
 
@@ -132,6 +135,8 @@ DESCRIPTIONS = {
     'lxqt': _("LXQt is the next-generation of LXDE, the Lightweight Desktop "
               "Environment. It is lightweight, modular, blazing-fast, and "
               "user-friendly."),
+
+    'deepin': _("deepin is a Chineese made desktop enviroment. Users looking for a simple and familiar UI will love deepin "),
 
     'base': _("This option will install Antergos as command-line only system, "
               "without any type of graphical interface. After the installation you can "
