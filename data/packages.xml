@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- This file is supposed to be in the antergos server -->
-<!-- Please add new packages alphabetically -->
 <cnchi>
 	<editions>
 		<edition name="common" description="Packages common to all DE and base">
@@ -22,6 +20,7 @@
 				<pkgname>ipw2200-fw</pkgname>
 				<pkgname>modemmanager</pkgname>
 				<pkgname>net-tools</pkgname>
+				<pkgname>networkmanager</pkgname>
 				<pkgname>ntfs-3g</pkgname>
 				<pkgname>openssh</pkgname>
 				<pkgname>pkgfile</pkgname>
@@ -43,8 +42,6 @@
 				<pkgname>accountsservice</pkgname>
 				<pkgname>antergos-wallpapers</pkgname>
 				<pkgname>antergos-welcome</pkgname>
-				<pkgname>chromium</pkgname>
-				<pkgname>chromium-pepper-flash</pkgname>
 				<pkgname>ffmpegthumbnailer</pkgname>
 				<pkgname>gst-libav</pkgname>
 				<pkgname>gst-plugins-bad</pkgname>
@@ -52,7 +49,6 @@
 				<pkgname>gst-plugins-good</pkgname>
 				<pkgname>gst-plugins-ugly</pkgname>
 				<pkgname>gstreamer-vaapi</pkgname>
-				<pkgname>gstreamer0.10-plugins</pkgname>  <!-- Group -->
 				<pkgname>libdvdcss</pkgname>
 				<pkgname dm='true' name='lightdm'>lightdm</pkgname>
 				<pkgname>lightdm-webkit2-greeter</pkgname>
@@ -60,11 +56,13 @@
 				<pkgname>mesa-vdpau</pkgname>
 				<pkgname>numix-frost-themes</pkgname>
 				<pkgname>numix-icon-theme</pkgname>
-				<pkgname lib='gtk'>numix-icon-theme-square</pkgname>
+				<pkgname>numix-icon-theme-square</pkgname>
 				<pkgname>pamac</pkgname>
 				<pkgname>pavucontrol</pkgname>
 				<pkgname>pulseaudio</pkgname>
 				<pkgname>pulseaudio-alsa</pkgname>
+				<pkgname lib="gtk">qt5-styleplugins</pkgname>
+				<pkgname lib="gtk">qt5ct</pkgname>
 				<pkgname>ttf-bitstream-vera</pkgname>
 				<pkgname>ttf-dejavu</pkgname>
 				<pkgname>ttf-liberation</pkgname>
@@ -99,9 +97,9 @@
 			<packages>
 				<pkgname>antergos-gnome-defaults-list</pkgname>
 				<pkgname>baobab</pkgname>  <!-- Disk usage -->
-				<pkgname>bijiben</pkgname> <!-- notes app -->
 				<pkgname>brasero</pkgname>
-				<pkgname>cdrkit</pkgname>
+				<pkgname>cdrtools</pkgname>
+				<pkgname>chrome-gnome-shell</pkgname>
 				<pkgname>evince</pkgname>
 				<pkgname>eog</pkgname>
 				<pkgname>file-roller</pkgname>
@@ -132,7 +130,7 @@
 				<pkgname>gnome-weather</pkgname>
 				<pkgname>gvfs-mtp</pkgname>
 				<pkgname>hicolor-icon-theme</pkgname>
-				<pkgname>libgnomeui</pkgname>
+				<!-- <pkgname>libgnomeui</pkgname> -->
 				<pkgname>light-locker</pkgname>
 				<pkgname>light-locker-settings</pkgname>
 				<pkgname>nautilus</pkgname>
@@ -153,9 +151,9 @@
 			<packages>
 				<pkgname>antergos-gnome-defaults-list</pkgname>
 				<pkgname>baobab</pkgname>  <!-- Disk usage -->
-				<pkgname>bijiben</pkgname> <!-- notes app -->
+				<!-- <pkgname>bijiben</pkgname> -->
 				<pkgname>brasero</pkgname>
-				<pkgname>cdrkit</pkgname>
+				<pkgname>cdrtools</pkgname>
 				<pkgname>cinnamon</pkgname>
 				<pkgname>cinnamon-control-center</pkgname>
 				<pkgname>cinnamon-desktop</pkgname>
@@ -171,6 +169,7 @@
 				<pkgname>gnome-calculator</pkgname>
 				<pkgname>gnome-common</pkgname>
 				<pkgname>gnome-disk-utility</pkgname>
+				<pkgname>gnome-font-viewer</pkgname>
 				<pkgname>gnome-keyring</pkgname>
 				<pkgname>gnome-music</pkgname>
 				<pkgname>gnome-photos</pkgname>
@@ -180,7 +179,7 @@
 				<pkgname>gnome-themes-standard</pkgname>
 				<pkgname>gvfs-mtp</pkgname>
 				<pkgname>hicolor-icon-theme</pkgname>
-				<pkgname>libgnomeui</pkgname>
+				<!-- <pkgname>libgnomeui</pkgname> -->
 				<pkgname>muffin</pkgname>
 				<pkgname>nemo</pkgname>
 				<pkgname>nemo-fileroller</pkgname>
@@ -199,7 +198,7 @@
 
 		<edition name="XFCE" description="XFCE Desktop">
 			<packages>
-				<pkgname>cdrkit</pkgname>
+				<pkgname>cdrtools</pkgname>
 				<pkgname>evince</pkgname>
 				<pkgname>file-roller</pkgname>
 				<pkgname>gamin</pkgname>
@@ -228,6 +227,7 @@
 				<pkgname>xfce4-battery-plugin</pkgname>
 				<pkgname>xfce4-datetime-plugin</pkgname>
 				<pkgname>xfce4-notifyd</pkgname>
+                <pkgname>xfce4-pulseaudio-plugin</pkgname>
 				<pkgname>xfce4-screenshooter</pkgname>
 				<pkgname>xfce4-taskmanager</pkgname>
 				<pkgname>xscreensaver</pkgname>
@@ -257,7 +257,7 @@
 				<pkgname>caja</pkgname>
 				<pkgname>caja-gksu</pkgname>
 				<pkgname>caja-open-terminal</pkgname>
-				<pkgname>cdrkit</pkgname>
+				<pkgname>cdrtools</pkgname>
 				<pkgname>engrampa</pkgname>
 				<pkgname>eom</pkgname>
 				<pkgname>galculator-gtk2</pkgname>
@@ -306,12 +306,50 @@
 			</packages>
 		</edition>
 
+		<edition name="deepin" description="deepin Desktop Environment">
+			<packages>
+				<pkgname>deepin-account-faces</pkgname>
+				<pkgname>deepin-api</pkgname>
+				<pkgname>deepin-artwork-themes</pkgname>
+				<pkgname>deepin-calendar</pkgname>
+				<pkgname>deepin-control-center</pkgname>
+				<pkgname>deepin-daemon</pkgname>
+				<pkgname>deepin-desktop</pkgname>
+				<pkgname>deepin-desktop-base</pkgname>
+				<pkgname>deepin-desktop-schemas</pkgname>
+				<pkgname>deepin-dock</pkgname>
+				<pkgname>deepin-file-manager</pkgname>
+				<pkgname>deepin-gtk-theme</pkgname>
+				<pkgname>deepin-image-viewer</pkgname>
+				<pkgname>deepin-launcher</pkgname>
+				<pkgname>deepin-menu</pkgname>
+				<pkgname>deepin-notifications</pkgname>
+				<pkgname>deepin-qtintegration</pkgname>
+				<pkgname>deepin-session-ui</pkgname>
+				<pkgname>deepin-shortcut-viewer</pkgname>
+				<pkgname>deepin-social-sharing</pkgname>
+				<pkgname>deepin-sound-theme</pkgname>
+				<pkgname>deepin-wallpapers</pkgname>
+				<pkgname>deepin-wm-switcher</pkgname>
+				<pkgname>python2-deepin-ui</pkgname>
+				<pkgname>python2-deepin-utils</pkgname>
+				<pkgname>startdde</pkgname>
+				<pkgname>deepin-screenshot</pkgname>
+				<pkgname>deepin-terminal</pkgname>
+				<pkgname>deepin-music</pkgname>
+				<pkgname>deepin-cogl</pkgname>
+				<pkgname>deepin-dbus-factory</pkgname>
+				<pkgname>deepin-mutter</pkgname>
+			</packages>
+		</edition>
+
+
 		<edition name="openbox" description="Openbox Window Manager">
 			<packages>
 				<pkgname>antergos-openbox-setup</pkgname>
 				<pkgname>arandr</pkgname>
 				<pkgname>conky</pkgname>
-				<pkgname>cdrkit</pkgname>
+				<pkgname>cdrtools</pkgname>
 				<pkgname>file-roller</pkgname>
 				<pkgname>galculator</pkgname>
 				<pkgname>gmrun</pkgname>
@@ -340,6 +378,7 @@
 				<pkgname>openbox-menu</pkgname>
 				<pkgname>parcellite</pkgname>
 				<pkgname>pidgin</pkgname>
+				<pkgname>pcmanfm</pkgname>
 				<pkgname>plank</pkgname>
 				<pkgname>plank-config</pkgname>
 				<pkgname>plank-theme-numix</pkgname>
@@ -348,9 +387,6 @@
 				<pkgname>python2-xdg</pkgname>
 				<pkgname>scrot</pkgname>
 				<pkgname>tint2</pkgname>
-				<pkgname>thunar</pkgname>
-				<pkgname>thunar-archive-plugin</pkgname>
-				<pkgname>thunar-volman</pkgname>
 				<pkgname>transmission-gtk</pkgname>
 				<pkgname>udiskie</pkgname>
 				<pkgname>volumeicon</pkgname>
@@ -397,16 +433,18 @@
 			<pkgname lib='gtk'>system-config-printer</pkgname>
 			<pkgname>splix</pkgname>
 		</feature>
+		<feature name="chromium">
+			<pkgname>chromium</pkgname>
+		</feature>
 		<feature name="firefox">
-			<pkgname conflicts="chromium,chromium-pepper-flash">firefox</pkgname>
-			<pkgname conflicts="chromium,chromium-pepper-flash">flashplugin</pkgname>
+			<pkgname>firefox</pkgname>
 		</feature>
 		<feature name="firewall">
 			<pkgname>gufw</pkgname>
 			<pkgname>ufw</pkgname>
 		</feature>
 		<feature name="flash">
-			<pkgname>chromium-pepper-flash</pkgname>
+			<pkgname>pepper-flash</pkgname>
 			<pkgname>flashplugin</pkgname>
 		</feature>
 		<feature name="fonts">
@@ -414,6 +452,7 @@
 			<pkgname conflicts='ttf-droid'>ttf-google-fonts</pkgname>
 		</feature>
 		<feature name="games">
+			<pkgname>steam-native-runtime</pkgname>
 			<pkgname>steam</pkgname>
 			<pkgname>playonlinux</pkgname>
 			<pkgname arch="x86_64">lib32-libldap</pkgname>
@@ -484,15 +523,36 @@
 	</zfs>
 
 	<locale_fonts>
-		<chinese>
+		<fonts lang="zh_TW, zh_CN">
 			<pkgname>opendesktop-fonts</pkgname>
-		</chinese>
+			<pkgname>adobe-source-han-sans-cn-fonts</pkgname>
+			<pkgname>adobe-source-han-sans-tw-fonts</pkgname>
+		</fonts>
+		<fonts lang="ja">
+			<pkgname>adobe-source-han-sans-jp-fonts</pkgname>
+			<pkgname>ttf-sazanami</pkgname>
+			<pkgname>otf-ipafont</pkgname>
+		</fonts>
+		<fonts lang="ko">
+			<pkgname>adobe-source-han-sans-kr-fonts</pkgname>
+			<pkgname>ttf-baekmuk</pkgname>
+		</fonts>
 	</locale_fonts>
-	<locale_fonts>
-		<chinese>
-			<pkgname>opendesktop-fonts</pkgname>
-		</chinese>
-	</locale_fonts>
+
+	<input_systems>
+		<fcitx lang="zh_TW, zh_CN, ja, ko">
+			<package>fcitx</package>
+			<package lib="gtk">fcitx-configtool</package>
+			<package lib="qt">kcm-fcitx</package>
+			<package lib="gtk">fcitx-gtk2</package>
+	 		<package lib="gtk">fcitx-gtk3</package>
+		 	<package lib="qt">fcitx-qt4</package>
+			<package lib="qt">fcitx-qt5</package>
+			<package lang="zh_TW, zh_CN">fcitx-googlepinyin</package>
+			<package lang="ja">fcitx-mozc</package>
+			<package lang="ko">fcitx-hangul</package>
+		</fcitx>
+	</input_systems>
 
 	<bootloaders>
 		<bootloader name="grub2">
